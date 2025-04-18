@@ -1,0 +1,26 @@
+*{
+    font-family: sans-serif;
+}
+#hr{
+    font-size: 5em;
+    
+}
+#min{
+    font-size: 5em;
+}
+#sec{
+    font-size: 5em;
+}
+#am{
+    font-size: 2em;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(138, 138, 232);
+    padding: 5%;
+    border-radius: 10px;
+    width:25em ;
+    margin-top: 30vh;
+}
