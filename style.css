@@ -1,36 +1,67 @@
-*{
-    font-family: "Poppins";
-    padding: 0%;
-    margin: 0%;
-    
+/* Reset + fonts */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#hr{
-    font-size: 5em;
-    
-}
-#min{
-    font-size: 5em;
-}
-#sec{
-    font-size: 5em;
-}
-#am{
-    font-size: 2em;
-}
-.clock{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-   align-items:center ;
-    padding: 2% 10% 2% 10%;
-    border-radius: 10px;
-    width:26em ;
-    margin-top: 30vh;
-    color: white;
 
-    
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000; /* pure black background */
+  overflow: hidden;
 }
-.todayDate{
-    width: 20em;
+
+/* LED clock container */
+.clock {
+  background: #111; /* dark gray for subtle contrast */
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  color: #0f0; /* green LED digits */
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Time digits */
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: clamp(2.5rem, 8vw, 4rem); /* responsive font size */
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+  /* text-shadow: 0 0 4px #0f0, 0 0 8px #0f0; */
+}
+
+/* Labels under numbers */
+.time span:nth-child(2n) {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 400;
+  margin-top: 0.5rem;
+  text-shadow: none;
+  color: #0f0;
+}
+
+/* Date display */
+.todayDate {
+  margin-bottom: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-weight: 500;
+  color: #f44; /* softer red */
+  text-shadow: 0 0 3px #f44;
+}
+
+.todayDate #am{
+    color:#0f0;
+}
+#dots{
+    font-size:medium;
 }

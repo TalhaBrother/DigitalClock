@@ -7,29 +7,57 @@
     <link rel="stylesheet" href="style.css">
     <title>Digital CLock</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<center>
 
-    <body>
-        <div class="container">
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="s">
+                <div class="square"></div>
+            </div>
+
             <div class="clock">
                 <div class="todayDate">
-                    <span id="date">abc</span>
+                    <span id="date"></span>
+                    <span id="am">AM</span>
                 </div>
                 <div class="time">
-                    <span id="hr">00</span>
-                    <span id="min">00</span>
-                    <span id="sec">00</span>
-                    <span id="am">am</span>
+                    <div class="hrs">
+                        <span id="hr">00</span>
+                        <span id="hrs">Hours</span>
+                    </div>
+                    <span id="dots">:</span>
+                    <div class="mins">
+                        <span id="min">00</span>
+                        <span id="hrs">Mins</span>
+                    </div>
+                    <span id="dots">:</span>
+                    <div class="secs">
+                        <span id="sec">00</span>
+                        <span id="secs">Secs</span>
+                    </div>
+
+
+
+
+
+
                 </div>
 
             </div>
+            <div class="c">
+                <div class="circle"></div>
+            </div>
         </div>
+    </div>
 
-        <script src="main.js"></script>
-    </body>
-</center>
+    <script src="main.js"></script>
+</body>
+
 
 </html>

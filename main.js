@@ -11,7 +11,7 @@ setInterval(function(){
     var currentDate=new Date();
     if(currentDate.getHours()>12){
         hour.innerText=currentDate.getHours()-12;
-        day.innerText="pm";
+        day.innerText="PM";
     }
     else if(currentDate.getHours()===0){
         hour.innerText= 12;
@@ -19,6 +19,6 @@ setInterval(function(){
     else{
         hour.innerText=currentDate.getHours();
     }
-    minute.innerText=" : "+currentDate.getMinutes()+" : ";
+    minute.innerText=currentDate.getMinutes();
     second.innerText=currentDate.getSeconds();
 },1000)
